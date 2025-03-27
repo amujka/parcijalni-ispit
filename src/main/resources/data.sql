@@ -5,18 +5,16 @@ INSERT INTO Student(firstName, lastName) VALUES
 ('Marko', 'Markic'),
 ('Petra', 'Petric');
 -- Umetanje podataka u tablicu PROGRAM_OBRAZOVANJA
-INSERT INTO Education_program(name, csvet) VALUES
+INSERT INTO EducationProgram(name, csvet) VALUES
 ('Prvi', 3),
 ('Drugi', 5),
 ('Treći', 2);
 
 -- Umetanje podataka u tablicu UPIS
-INSERT INTO Enrollment(Education_program_ID, Student_ID) VALUES
+INSERT INTO Enrollment(studentId, educationProgramId) VALUES
 (1, 1),
-(5, 2),
+(2, 2),
 (3, 3),
-(2, 4),
-(1, 1);
 
 insert into USERS(id, username, password)
 values
